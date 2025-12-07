@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import Image from "next/image";
+import { TypeAnimation } from 'react-type-animation';
 
 const MainProfile = () => {
   const [copied, setCopied] = useState(false);
@@ -33,7 +34,23 @@ const MainProfile = () => {
       <div className="relative portfolio-img ">
         <Image src={ProfileImage} height={270} width={390} alt="profile-img" />
       </div>
-      <h1 className="profile-title">Asadur Jaman Nur 👋</h1>
+      <h1 className="sm:text-4xl font-semibold text-[#1a1f2c] mb-0 mt-[21px] text-2xl ">Asadur Jaman Nur <span className="text-sm sm:text-4xl">👋</span> </h1>
+      <TypeAnimation
+        sequence={[
+          // Same substring at the start will only be typed once, initially
+          'I am A Frontend Developer',
+          1000,
+          'I am A React Js Developer',
+          1000,
+          'I am A Next Js Developer',
+          1000
+        ]}
+        speed={50}
+        className="text-xl"
+        // style={{ fontSize: '1.2em' }}
+        repeat={Infinity}
+      />
+      {/* <h2 className="text-3xl">Frontend Developer</h2> */}
       <h4 className="profile-para">
         I’m a passionate Front-End Developer with over 1 year of hands-on
         experience crafting responsive, high-performance, and visually appealing
