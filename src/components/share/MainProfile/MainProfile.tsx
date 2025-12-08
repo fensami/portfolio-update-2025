@@ -27,12 +27,12 @@ const MainProfile = () => {
         console.error("Failed to copy email: ", err);
       });
   };
-  const ProfileImage =
-    "https://portfolio-update-2024.vercel.app/assets/profile-img-DRGUVHxp.jpg";
+  // const ProfileImage = "https://portfolio-update-2024.vercel.app/assets/profile-img-DRGUVHxp.jpg";
+  const ProfileImage = "https://res.cloudinary.com/dsc0hliud/image/upload/v1765169585/a169b422-6a07-4a8c-aa1e-6db7f7dc79a0_haxwhe.jpg";
   return (
     <div className="portfolio-global-box">
       <div className="relative portfolio-img ">
-        <Image src={ProfileImage} height={270} width={390} alt="profile-img" />
+        <Image src={ProfileImage} height={270} width={390} alt="profile-img" className="h-[270px]"/>
       </div>
       <h1 className="sm:text-4xl font-semibold text-[#1a1f2c] mb-0 mt-[21px] text-2xl ">Asadur Jaman Nur <span className="text-sm sm:text-4xl">👋</span> </h1>
       <TypeAnimation

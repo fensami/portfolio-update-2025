@@ -3,11 +3,13 @@ import Nav from "@/components/Nav/Nav";
 
 const CommonLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div>
-      <Nav />
+    <>
+      <div className="pb-11">
+        <Nav />
+      </div>
       <main>{children}</main>
       <Footer />
-    </div>
+    </>
   );
 };
 

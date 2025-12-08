@@ -15,7 +15,7 @@ type TProject = {
 
 const AllProjectPage = async () => {
   return (
-    <div className="container mx-auto py-8 px-5">
+    <div className="container mx-auto px-5 lg:px-0">
       <h1 className="text-3xl font-bold mb-6">All Projects</h1>
 
       {/* Project grid */}

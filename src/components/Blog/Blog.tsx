@@ -1,12 +1,12 @@
 import Image from "next/image";
-import MainProfile from "../Pages/HomePage/MainProfile/MainProfile";
 import Link from "next/link";
 import { blogData } from "../BlogComponent/BlogFakeData";
+import MainProfile from "../share/MainProfile/MainProfile";
 
 const Blog = () => {
   return (
     <div className="container mx-auto px-5 md:px-0">
-      <div className="about-wrapper mt-40">
+      <div className="about-wrapper">
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-12 sm:col-span-4 h-full">
             <MainProfile />

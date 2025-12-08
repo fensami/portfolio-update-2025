@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import MainProfile from "../Pages/HomePage/MainProfile/MainProfile";
+import MainProfile from "../share/MainProfile/MainProfile";
 
 const ContactUs = () => {
   const form = useRef<HTMLFormElement | null>(null);
@@ -41,7 +41,7 @@ const ContactUs = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="grid grid-cols-12 gap-5 mt-20">
+      <div className="grid grid-cols-12 gap-5">
         <div className="md:col-span-4 col-span-12">
           <MainProfile />
         </div>
